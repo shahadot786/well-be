@@ -1,6 +1,6 @@
 import { ThemedText } from "@/components/ThemedText";
 import { Link } from "expo-router";
-import { Pressable, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -11,11 +11,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Well Be</Text>
-      <Link href={"/login"} asChild>
-        <Pressable>
-          <ThemedText type="link">Login</ThemedText>
-        </Pressable>
+      <Link href={"/"} asChild>
+        <ThemedText type="defaultSemiBold">Login Page</ThemedText>
       </Link>
     </View>
   );
